@@ -1,0 +1,4 @@
+MVC controller met aparte classlib, api
+
+bedoeling was om van de MVC naar de api te gaan, liep vast bij het probleem dat ik bij mijn api geen controllers kan aanmaken i.v.m. package fout. Na troubleshooten en hulp van Miel ook niet opgelost.
+Op advies van Miel stuur ik dit project wel voor PI4- maar niet het uiteindelijke project.
