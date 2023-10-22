@@ -1,0 +1,108 @@
+﻿@model AvatarCollectionLibrary.Collectable
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Collectable</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CollectableID" class="control-label"></label>
+                <input asp-for="CollectableID" class="form-control" />
+                <span asp-validation-for="CollectableID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Worth" class="control-label"></label>
+                <input asp-for="Worth" class="form-control" />
+                <span asp-validation-for="Worth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Releasedate" class="control-label"></label>
+                <input asp-for="Releasedate" class="form-control" />
+                <span asp-validation-for="Releasedate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                <input asp-for="Category" class="form-control" />
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OperatingSystem" class="control-label"></label>
+                <input asp-for="OperatingSystem" class="form-control" />
+                <span asp-validation-for="OperatingSystem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Platform" class="control-label"></label>
+                <input asp-for="Platform" class="form-control" />
+                <span asp-validation-for="Platform" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComicEdition" class="control-label"></label>
+                <input asp-for="ComicEdition" class="form-control" />
+                <span asp-validation-for="ComicEdition" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comic" class="control-label"></label>
+                <input asp-for="Comic" class="form-control" />
+                <span asp-validation-for="Comic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Novel" class="control-label"></label>
+                <input asp-for="Novel" class="form-control" />
+                <span asp-validation-for="Novel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BlueRay" class="control-label"></label>
+                <input asp-for="BlueRay" class="form-control" />
+                <span asp-validation-for="BlueRay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DVD" class="control-label"></label>
+                <input asp-for="DVD" class="form-control" />
+                <span asp-validation-for="DVD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PVC" class="control-label"></label>
+                <input asp-for="PVC" class="form-control" />
+                <span asp-validation-for="PVC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FunkoPop" class="control-label"></label>
+                <input asp-for="FunkoPop" class="form-control" />
+                <span asp-validation-for="FunkoPop" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
